@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quai - Antique - Modification de l'utilisateur{% endblock %}
+
+{% block body %}
+<section >
+    <div >
+        <div class="container">
+            <h1 class="text-danger mt-5 text-center">Modifier mes informations</h1>
+            
+            <hr class="featurette-divider mt-5">
+            {{ form_start(form) }}
+
+            {# {% set messages = app.flashes %} #}
+
+        
+            {{ form_end(form) }}
+            {% for message in app.flashes('danger') %}
+                <div class="alert alert-success" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            <hr class="featurette-divider mt-5">
+        </div>    
+    </div>
+</section>
+
+{% endblock %}

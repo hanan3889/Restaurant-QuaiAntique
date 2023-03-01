@@ -15,7 +15,7 @@
           <ul class="navbar-nav ms-auto ">
           {% if app.user %}
             {# <li class="nav-item"><a class="nav-link text-muted" href="{{path('app_login')}}">Mon compte</a></li> #}
-            <li class="nav-item"><a class="nav-link text-muted" href="{{path('user_edit', {id:app.user.id})}}">Mon compte</a></li> 
+            {# <li class="nav-item"><a class="nav-link text-muted" href="{{path('user_edit', {id:app.user.id})}}">Mon compte</a></li>  #}
             <li class="nav-item"><a class="nav-link text-muted" href="{{path('user_edit', {id:app.user.id})}}">Modifier mes informations</a></li> 
             <li class="nav-item"><a class="nav-link text-muted" href="{{path('app_logout')}}">Me déconnecter</a></li>
           {% else %}  
