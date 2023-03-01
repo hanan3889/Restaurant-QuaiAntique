@@ -22,7 +22,7 @@ class DishesCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Plats')
             ->setEntityLabelInSingular('Plat')
 
-            ->setPageTitle("index","Quai Antique - Administration des plats");
+            ->setPageTitle("index", "Quai Antique - Administration des plats");
     }
 
    

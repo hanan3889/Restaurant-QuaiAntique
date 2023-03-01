@@ -23,7 +23,7 @@ class UserCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Utilisateurs')
             ->setEntityLabelInSingular('Utilisateur')
 
-            ->setPageTitle("index","Quai Antique - Administration des Utilisateurs");
+            ->setPageTitle("index", "Quai Antique - Administration des Utilisateurs");
     }
 
     

@@ -23,7 +23,7 @@ class ImageCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Modifications des images')
             ->setEntityLabelInSingular('Modification de l\`image')
 
-            ->setPageTitle("index","Quai Antique - Administration des images");
+            ->setPageTitle("index", "Quai Antique - Administration des images");
     }
 
     

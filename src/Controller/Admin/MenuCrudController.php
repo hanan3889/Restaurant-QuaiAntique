@@ -21,7 +21,7 @@ class MenuCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInPlural('Menu')
 
-            ->setPageTitle("index","Quai Antique - Administration du menu");
+            ->setPageTitle("index", "Quai Antique - Administration du menu");
     }
 
    
