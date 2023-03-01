@@ -15,11 +15,16 @@ class ReservationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Nom', TextType::class)
+            ->add('Nom', TextType::class,[
+                'attr' => [
+                    'class' => 'form-control'
+                ]
+            ])
             ->add('email', EmailType::class)
             ->add('arrivalDate', DateType::class, [
                 'widget' => 'single_text',
                 'format' => 'yyyy-MM-dd',
+                'label' => 'Heure d`arrivée'
             ])
             ->add('departureDate', DateType::class, [
                 'widget' => 'single_text',

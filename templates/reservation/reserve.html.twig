@@ -9,6 +9,8 @@
 <main>
     <div class="container">
     <h1 class="text-danger mt-5 text-center">Réservation</h1>
+    <p class="text-center">Veuillez remplir le formulaire ci-dessous pour réserver votre table.</p>
+    <hr class="featurette-divider mt-5">
         {{ form_start(form) }}
         {# {{ form_row(form.name) }} #}
         {{ form_row(form.email) }}
@@ -17,5 +19,7 @@
         {{ form_row(form.numberOfGuests) }}
         {{ form_row(form.submit) }}
         {{ form_end(form) }}
+
+    <hr class="featurette-divider mt-5">
     </div>
 {% endblock %}
