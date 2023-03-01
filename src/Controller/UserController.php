@@ -13,8 +13,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class UserController extends AbstractController
 {
     #[Route('/utilisateur/edition/{id}', name: 'user_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, User $user, 
-    EntityManagerInterface $manager): Response
+    public function edit(Request $request, User $user,
+    EntityManagerInterface $manager
+    ): Response
     {
         
         $form = $this->createForm(UserType::class, $user);
