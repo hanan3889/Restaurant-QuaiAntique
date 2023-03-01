@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{# Carroussel Start #}
+<div class="container">
+    <div class="row pt-1 pb-1">
+        <div class="col-lg-12 text-center">
+            <h4 class="text-center">Bienvenue au Quai Antique</h4>
+            <h6 class="text-center text-danger">Venez (re)découvrir les spécialités savoyardes</h6>
+        </div>
+    </div>
+</div>
+<section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/tartiflette.jpg" class="d-block w-100" alt="notre tartiflette">
+            </div>
+      
+    </div>
+</section>
+{# Carroussel End #}
+
+<section>
+<div class="container">
+  <h1 class="text-center text-danger mt-5 reveal fw-bold">Nos spécialités</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-item text-center">
+          <a href="/menu"><img src="/assets/images/fondue.jpg" alt="fondue" class="img-fluid"></a><hr>
+          <h5 class ="text-danger">Fondue Savoyarde</h5>
+          <span class="product-subtitle">Savourez notre fondue tradionnelle savoyarde</span>
+          <span class="product-price text-danger">17 €</span>
+        </div>
+      </div>
+      
+    <div class="col-md-3">
+      <div class="product-item text-center">
+        <a href="/menu"><img src="/assets/images/tartiflette.jpg" alt="tartiflette" class="img-fluid"></a><hr>
+        <h5 class ="text-danger">Tartiflette</h5>
+        <span class="product-subtitle">Ce plat emblématique de Haute Savoie composé de pommes de terre fondantes, de fromage Reblochon onctueux et de lardons pour la pointe salée irrésistible</span>
+        <span class="product-price text-danger">18 €</span>
+      </div>        
+    </div>
+    
+    <div class="col-md-3">
+      <div class="product-item text-center">
+        <a href="/menu"><img src="/assets/images/fromage.jpg" alt="assiette de fromage" class="img-fluid"></a><hr>
+        <h5 class ="text-danger">Assortiment de fromages locale</h5>
+        <span class="product-subtitle">Nous vous proposons de découvrir nos fromages issus de nos producteurs locaux</span>
+        <span class="product-price text-danger">8.5 €</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product-item text-center">
+        <a href="/menu"><img src="/assets/images/burgers.jpg" alt="burgers" class="img-fluid"></a><hr>
+        <h5 class ="text-danger">Hamburger savoyard</h5>
+        <span class="product-subtitle">Laissez-vous tentez par notre hamburger revisité</span>
+        <span class="product-price text-danger">18 €</span>
+      </div>        
+    </div>
+    
+    </div>
+    <div class="container d-flex justify-content-center">
+    <button class="btn btn-danger btn-lg btn-block mt-5"><a class="nav-link text-white" href="/menu">Voir plus</a></button>
+    </div>
+
+    <hr class="featurette-divider mt-5">
+
+    <div class="reveal row featurette mt-5">
+        <div class="col-md-7">
+            <h1 class="fw-bold text-center text-danger mt-5 reveal featurette-heading">Notre Chef</h1>
+            <h2 class="text-center text-white"><span>Arnaud Michant</span></h2>
+            <p class="lead">Véritable passionné de la Savoie et particulièrement ses produits et ses producteurs, 
+            <span class="text-danger">Arnaud Michant</span>, a décidé d'ouvrir son restaurant à Chambéry.</p><br>
+            <p class="lead">Il vous propose de (re)découvir la cuisine traditionnelle et savoyarde avec des plats <span class="text-danger">100% fait-maison.</span> </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-featurette img-fluid mx-auto" src="/assets/images/chef.jpg" alt="Chef Arnaud Michant">
+        </div>
+    </div>
+
+
+    <hr class="featurette-divider mt-5">
+
+    <div class="reveal row featurette mt-5">
+        <div class="col-md-7 order-md-2">
+          <h1 class="fw-bold text-center text-danger mt-5 reveal featurette-heading">Cuisine fait-maison</h1>
+            <h2 class="featurette-heading text-center reveal ">Tous nos plats sont fait le jour de votre arrivée</h2>
+            <p class="lead">Ici, nous privilégions la qualité plutôt qu'a la quantité pour vous offrir une cuisine simple et gourmande. Nos maîtres-mots : <span class="text-danger">authenticité, fait-maison et terroir.</span></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="img-featurette img-fluid mx-auto" src="/assets/images/kitchen.jpg" alt="image de notre cuisine">
+        </div>
+    </div>
+
+    <hr class="featurette-divider mt-5">
+
+    <div class="reveal row featurette mt-5">
+        <div class="col-md-7">
+            <h1 class="fw-bold text-center text-danger mt-5 reveal featurette-heading">Des produits locaux</h1>
+            <h2 class="featurette-heading text-center reveal">Tous droits issuts de nos producteurs locaux</h2>
+            <p class="lead">La région Savoyarde est riche en produits de qualité. Nous travaillons avec des producteurs locaux pour vous proposer des plats <span class="text-danger">100% fait-maison</span> avec des produits de saison.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-featurette img-fluid mx-auto" src="/assets/images/producer.jpg" alt="producteurs locaux">
+        </div>
+    </div>
+
+    <hr class="featurette-divider mt-5">
+
+    <!-- /END THE FEATURETTES -->
+
+    </div>
+</div>
+</section>
+
+
+
+
+{% endblock %}

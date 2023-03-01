@@ -1,3 +1,110 @@
-body {
-    background-color: lightgray;
+h1 {
+  font-family: "Zeyada", cursive;
 }
+
+/* Navbar START
+        ------------------------- */
+.navbar {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-item a:hover {
+  border-radius: 30%;
+  padding: 0 10px;
+}
+
+.navbar-item-custom {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+.navbar-item-custom a {
+  color: white;
+}
+.navbar-item-custom a:hover {
+  color: red;
+}
+
+/* Navbar END
+        ------------------------- */
+
+/* Product START
+        ------------------------- */
+
+.product-item img {
+  width: 250px;
+  height: 200px;
+}
+
+.product-item h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+.product-item {
+  margin-top: 50px;
+}
+
+.product-item span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+.product-item .product-subtitle {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+.product-item .product-price {
+  font-size: 14px;
+  font-weight: bold;
+}
+.product-price {
+  font-size: 19px;
+}
+
+/* Featurettes
+        ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0;
+  color: red;
+  /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  flex-wrap: wrap;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+.img-featurette {
+  width: 300px;
+}
+.block-small {
+  max-width: 600px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* scroll-animation  START
+      -------------------------*/
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 3s;
+}
+
+/* scroll-animation  END*/
