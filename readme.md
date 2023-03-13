@@ -1,7 +1,7 @@
-# Quai antique - restaurant
+# Quai Antique - restaurant
 
 Il s'agit d'un site internet fictif dans le cadre des mes etudes.
-Le visiteur peut voir les plats les plus appreciés, consulter les plats, créer un compte, se connecter et reserver une table.
+C'est un site internet sur le restaurant Quai Antique où le visiteur peut voir les plats les plus appreciés, consulter les plats, créer un compte, se connecter et reserver une table.
 
 ## Pré-requis
 
