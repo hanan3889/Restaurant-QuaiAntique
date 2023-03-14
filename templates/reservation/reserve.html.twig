@@ -17,9 +17,10 @@
         {{ form_row(form.numberOfGuests) }}
         {{ form_row(form.email) }}
         {{ form_row(form.arrivalDate) }}
-        {{ form_row(form.submit,  {'attr': {'class': 'btn-danger'}}) }}
+        {# {{ form_row(form.submit,  {'attr': {'class': 'btn-danger'}}) }} #}
         {# {{ form_row(form.departureDate) }} #}
         {{ form_row(form.startTime)}}
+        <button type="submit" class="btn btn-danger">Réserver</button>
         {{ form_end(form) }}
 
     <hr class="featurette-divider mt-5">

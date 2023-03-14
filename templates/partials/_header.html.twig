@@ -13,9 +13,32 @@
                 <li class="nav-item"><a class="nav-link text-danger" href="{{path('reservation')}}">Reservation</a></li>
             </ul>
           <ul class="navbar-nav ms-auto ">
+          {% if is_granted('ROLE_ADMIN') %}
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administration
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item nav-link text-muted" href="{{path('admin')}}">Administration</a></li>
+            <li><a class="dropdown-item" href="/admin/menu">Menu</a></li>
+            <li><a class="dropdown-item" href="/admin/menu/ajout">Menu - Ajouter</a></li>
+            <li><a class="dropdown-item" href="/admin/menu/modifier/{id}">Menu - Modifier</a></li>
+            <li><a class="dropdown-item" href="/admin/menu/suppression/{id}">Menu - Supprimer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/admin/images">Images</a></li>
+            <li><a class="dropdown-item" href="/admin/images/ajout">Images - Ajouter</a></li>
+            <li><a class="dropdown-item" href="/admin/images/modifier/{id}">Images - Modifier</a></li>
+            <li><a class="dropdown-item" href="/admin/images/suppression/{id}">Images - Supprimer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/admin/plats">Plats</a></li>
+            <li><a class="dropdown-item" href="/admin/plats/ajout">Plats - Ajouter</a></li>
+            <li><a class="dropdown-item" href="/admin/plats/modifier/{id}">Plats - Modifier</a></li>
+            <li><a class="dropdown-item" href="/admin/plats/suppression/{id}">Plats - Supprimer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/admin/horaires">Horaires</a></li>
+          </ul>
+          {% endif %}
           {% if app.user %}
-            {# <li class="nav-item"><a class="nav-link text-muted" href="{{path('app_login')}}">Mon compte</a></li> #}
-            {# <li class="nav-item"><a class="nav-link text-muted" href="{{path('user_edit', {id:app.user.id})}}">Mon compte</a></li>  #}
             <li class="nav-item"><a class="nav-link text-muted" href="{{path('user_edit', {id:app.user.id})}}">Modifier mes informations</a></li> 
             <li class="nav-item"><a class="nav-link text-muted" href="{{path('app_logout')}}">Me déconnecter</a></li>
           {% else %}  

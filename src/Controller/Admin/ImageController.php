@@ -26,7 +26,7 @@ class ImageController extends AbstractController
     {
       //on verifie si l'utilisateur peut modifier avec le voter
       $this->denyAccessUnlessGranted('IMAGES_EDIT', $images);
-      return $this->render('admin/dishes/index.html.twig');
+      return $this->render('admin/images/index.html.twig');
     }
     #[Route('/suppression/{id}', name: 'delete')]
     public function delete(Image $images): Response

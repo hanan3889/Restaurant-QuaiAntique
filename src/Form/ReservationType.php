@@ -43,9 +43,9 @@ class ReservationType extends AbstractType
             //     'format' => 'yyyy-MM-dd',
             //     'label' =>''
             // ])
-            ->add('submit', SubmitType::class, [
-                'label' => 'valider',
-            ])
+            // ->add('submit', SubmitType::class, [
+            //     'label' => 'valider',
+            // ])
             ->add('startTime',TimeType::class,[
                 'input' =>'datetime',
                 'widget' =>'choice',
