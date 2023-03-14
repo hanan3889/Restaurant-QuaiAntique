@@ -47,6 +47,8 @@ pour installer et mettre à jour composer
 
 ## Administration
 
+# Admin - Solution 1
+
 Pour la partie administration j'ai installé le bundle EasyAdmin avec la commande :
 
 `composer require easycorp/easyadmin-bundle`
@@ -58,3 +60,9 @@ Puis configurer le dashboard avec :
 Et realiser les Crud Controllers avec :
 
 `php bin/console make:admin:crud`
+
+# Admin - Solution 2
+
+J'ai aussi crée des controllers à la main dans le repertoire Admin.
+Puis j'ai crée un dossier Voter dans le dossier Security et les fichiers voter liés à mes entités afin de crée des voter pour les CRUD.
+Voter que j'ai utilisé dans mes controller pour plus de sécurité.
