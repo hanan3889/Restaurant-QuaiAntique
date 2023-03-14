@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Menu;
+use App\Form\MenuFormType;
 use symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -20,7 +21,20 @@ class MenuController extends AbstractController
     public function add(): Response
     {
       $this->denyAccessUnlessGranted('ROLE_ADMIN');
-      return $this->render('admin/menu/index.html.twig');
+
+      //on crée un "nouveau menu"
+      $menu = new Menu();
+
+      //on crée le formulaire
+      $menuform = $this->createForm(MenuFormType::class, 
+      $menu
+    );
+
+      return $this->render('admin/menu/add.html.twig',[
+        'menuForm'=> $menuform->createView()
+      ]);
+
+
     }
     #[Route('/modifier/{id}', name: 'edit')]
     public function edit(Menu $menu): Response
