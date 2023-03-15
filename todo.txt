@@ -1,0 +1,11 @@
+TODO LIST
+
+A finir :
+- Les controllers
+- Les fixtures
+- Les messages de succes quand les info sont modifiés
+- Le js pour la reservation de table
+- Pré remplir les champs du form reservation quand le user est connecté
+- Régler le pb du controller des images
+- modifier le path dans la navbar
+- regler le pb du logo qui s'enlève

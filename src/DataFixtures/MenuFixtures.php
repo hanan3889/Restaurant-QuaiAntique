@@ -13,7 +13,7 @@ class MenuFixtures extends Fixture
     {
         $faker = Faker\Factory::create('fr_FR');
 
-        for($i = 1; $i <= 4; $i++){
+        for($i = 1; $i <= 9; $i++){
             $menus = new Menu();
             $menus->setName($faker->word);
             $menus->setDescription($faker->text(200));

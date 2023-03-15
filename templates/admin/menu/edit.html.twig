@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %} 
+
+{% block title %}Administration du menu{% endblock %} 
+
+{% block body %}
+<main>
+    <div class="container">
+    <h1 class="text-danger mt-5 text-center">Modifier un menu</h1>
+    <hr class="featurette-divider mt-5">
+      
+      {% include "admin/menu/_form.html.twig" with { 'button_label': 'Modifier'} %}
+
+    <hr class="featurette-divider mt-5">
+    </div>
+
+{% endblock %}

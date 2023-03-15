@@ -7,16 +7,16 @@ C'est un site internet sur le restaurant Quai Antique où le visiteur peut voir 
 
 Il s'agit d'un projet développé uniqument sur symfony 5.4.2.
 
-Serveur:
-Xampp
-Version du serveur : 10.4.27-MariaDB
+- Serveur:
+- Xampp
+- Version du serveur : 10.4.27-MariaDB
 
 ## Technologie
 
-PHP 8
-Composer v 2.5
-Symfony 5.4.2
-MySQL 8
+- PHP 8
+- Composer v 2.5
+- Symfony 5.4.2
+- MySQL 8
 
 Pour connaitre sa configuration il suffit de taper dans le terminal :
 
@@ -66,3 +66,9 @@ Et realiser les Crud Controllers avec :
 J'ai aussi crée des controllers à la main dans le repertoire Admin.
 Puis j'ai crée un dossier Voter dans le dossier Security et les fichiers voter liés à mes entités afin de crée des voter pour les CRUD.
 Voter que j'ai utilisé dans mes controller pour plus de sécurité.
+
+### Personnalisation des pages d'erreurs
+
+Pour personnaliser mes erreurs j'ai utilisé le twig pack via la commande :
+
+`composer require symfony/twig-pack`

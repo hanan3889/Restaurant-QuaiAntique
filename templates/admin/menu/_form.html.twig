@@ -2,5 +2,5 @@
 {{form_row(menuForm.name)}}
 {{form_row(menuForm.description)}}
 {{form_row(menuForm.price)}}
-<button type="submit" class="btn btn-danger">Ajouter</button>
+<button type="submit" class="btn btn-danger">{{button_label|default('Ajouter')}}</button>
 {{form_end(menuForm)}}
