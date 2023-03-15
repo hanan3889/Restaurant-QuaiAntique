@@ -76,7 +76,7 @@ Pour personnaliser mes erreurs j'ai utilisé le twig pack via la commande :
 
 `composer require symfony/twig-pack`
 
-### Update - Comment se rendre sur les differentes pages de l'administration
+### ⚠️ Update - Comment se rendre sur les differentes pages de l'administration
 
 Se connecter avec adminstrateur avec le mail *admin@quaiantique.live* ainsi que le MDP fourni dans mes livrables.
 
