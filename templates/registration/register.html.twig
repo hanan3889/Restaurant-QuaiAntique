@@ -29,7 +29,7 @@
                         {{ form_row(registrationForm.city) }}
                         {{ form_row(registrationForm.zipcode) }}
                 </fieldset>
-                 {% set messages = app.flashes %}
+                    {% set messages = app.flashes %}
 
             {% for message in app.flashes('success') %}
                 <div class="alert alert-success">

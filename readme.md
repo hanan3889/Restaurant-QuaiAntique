@@ -61,6 +61,9 @@ Et realiser les Crud Controllers avec :
 
 `php bin/console make:admin:crud`
 
+J'ai décidé de faire autrement car je n'ai pas réussi a faire mes Crud via le dashboard.
+D'ailleurs si vous rendez à la page /admin avec les accès vous tomberez sur l'administration du site.
+
 ### Admin - Solution 2
 
 J'ai aussi crée des controllers à la main dans le repertoire Admin.
@@ -72,3 +75,17 @@ Voter que j'ai utilisé dans mes controller pour plus de sécurité.
 Pour personnaliser mes erreurs j'ai utilisé le twig pack via la commande :
 
 `composer require symfony/twig-pack`
+
+### Update - Comment se rendre sur les differentes pages de l'administration
+
+Se connecter avec adminstrateur avec le mail *admin@quaiantique.live* ainsi que le MDP fourni dans mes livrables.
+
+Menu - Controller :
+➡️ Pour la page Ajout d'un nouveau menu : /admin/ajout
+➡️ Pour la page Modifier un menu : /admin/modifier/numero de l'id ex 9
+➡️ Pour la page Supprimer un menu : /admin/supprimer/numero de l'id ex 9
+
+Images - Controller :
+➡️ Pour la page Ajout d'une nouvelle image : /admin/ajout
+➡️ Pour la page Modifier une image : /admin/modifier/numero de l'id ex 9
+➡️ Pour la page Supprimer une image : /admin/supprimer/numero de l'id ex 9

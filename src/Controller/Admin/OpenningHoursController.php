@@ -28,7 +28,7 @@ class OpenningHoursController extends AbstractController
       $this->denyAccessUnlessGranted('OPEN_EDIT', $open);
       return $this->render('admin/openninghours/index.html.twig');
     }
-    #[Route('/suppression/{id}', name: 'delete')]
+    #[Route('/supprimer/{id}', name: 'delete')]
     public function delete(OpenningHours $open): Response
     {
       //on verifie si l'utilisateur peut supprimer avec le voter

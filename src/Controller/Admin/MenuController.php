@@ -90,7 +90,7 @@ class MenuController extends AbstractController
       $em->flush();
 
       //on affiche un message d'alert
-      $this->addFlash('succes', 'Menu modifié avec succès');
+      $this->addFlash('success', 'Menu modifié avec succès');
     }
 
     //on redirige
@@ -103,11 +103,45 @@ class MenuController extends AbstractController
       return $this->render('admin/menu/edit.html.twig');
     }
 
-    #[Route('/suppression/{id}', name: 'delete')]
-    public function delete(Menu $menu): Response
+    #[Route('/supprimer/{id}', name: 'delete')]
+    public function delete(Menu $menu,Request $request,
+    EntityManagerInterface $em): Response
     {
       //on verifie si l'utilisateur peut supprimer avec le voter
       $this->denyAccessUnlessGranted('MENU_DELETE', $menu);
-      return $this->render('admin/menu/index.html.twig');
+
+      //on multiplie le prix par 100
+      $prix = $menu->getPrice() * 100;
+      $menu->setPrice($prix);
+
+
+      //on crée le formulaire
+      $menuform = $this->createForm(MenuFormType::class, 
+      $menu
+    );
+
+    //on traite la requête du formulaire
+    $menuform->handleRequest($request);
+
+    //on vérifie si le formulaire est soumis ET valide
+    if ($menuform->isSubmitted() && $menuform->isValid()) {
+
+      //on divise le prix
+      $prix = $menu->getPrice() / 100;
+      $menu->setPrice($prix);
+
+      //on stocke
+      $em->persist($menu);
+      $em->flush();
+
+      //on affiche un message d'alert
+      $this->addFlash('succes', 'Menu supprimé avec succès');
+    }
+
+      // return $this->render('admin/menu/delete.html.twig');
+
+      return $this->render('admin/menu/delete.html.twig',[
+        'menuForm'=> $menuform->createView()
+      ]);
     }
 }

@@ -28,7 +28,7 @@ class DishesController extends AbstractController
       $this->denyAccessUnlessGranted('DISHES_EDIT', $dishes);
       return $this->render('admin/dishes/index.html.twig');
     }
-    #[Route('/suppression/{id}', name: 'delete')]
+    #[Route('/supprimer/{id}', name: 'delete')]
     public function delete(Dishes $dishes): Response
     {
       //on verifie si l'utilisateur peut supprimer avec le voter
