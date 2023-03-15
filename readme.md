@@ -82,12 +82,12 @@ Se connecter avec adminstrateur avec le mail *admin@quaiantique.live* ainsi que 
 
 Menu - Controller :
 
-- [➡️ ] Pour la page Ajout d'un nouveau menu : /admin/ajout
-- [ ] Pour la page Modifier un menu : /admin/modifier/numero de l'id ex 9
-- [ ] Pour la page Supprimer un menu : /admin/supprimer/numero de l'id ex 9
+- ➡️ Pour la page Ajout d'un nouveau menu : /admin/ajout
+- ➡️ Pour la page Modifier un menu : /admin/modifier/numero de l'id ex 9
+- ➡️ Pour la page Supprimer un menu : /admin/supprimer/numero de l'id ex 9
 
 Images - Controller :
 
-- [➡️ ] ➡️ Pour la page Ajout d'une nouvelle image : /admin/ajout
-- [ ] ➡️ Pour la page Modifier une image : /admin/modifier/numero de l'id ex 9
-- [ ] ➡️ Pour la page Supprimer une image : /admin/supprimer/numero de l'id ex 9
+- ➡️ Pour la page Ajout d'une nouvelle image : /admin/ajout
+- ➡️ Pour la page Modifier une image : /admin/modifier/numero de l'id ex 9
+- ➡️ Pour la page Supprimer une image : /admin/supprimer/numero de l'id ex 9
