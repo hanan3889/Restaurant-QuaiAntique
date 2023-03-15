@@ -45,6 +45,16 @@ avec la commande `git clone` https://github.com/hanan3889/ECF-Quai-Antique.git
 Puis `composer update`
 pour installer et mettre à jour composer
 
+Démarrer Apache et MySQL avec la panneau de donfiguration.
+
+Puis lancer le server local dans le terminal :
+
+`symfony server:start`
+
+Et pour l'arrêter :
+
+`symfony server:stop`
+
 # Administration
 
 ### Admin - Solution 1
