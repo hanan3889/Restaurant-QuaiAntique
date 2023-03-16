@@ -2,7 +2,7 @@ TODO LIST
 
 A finir :
 - Les controllers
-- Les fixtures
+- Les fixtures avec les relations
 - Les messages de succes quand les info sont modifiés
 - Le js pour la reservation de table
 - Pré remplir les champs du form reservation quand le user est connecté

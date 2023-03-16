@@ -24,7 +24,7 @@ class MenuController extends AbstractController
     {
       $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
-      //on crée un "nouveau menu"
+      //on crée un "menu"
       $menu = new Menu();
 
       //on crée le formulaire
@@ -93,8 +93,8 @@ class MenuController extends AbstractController
       $this->addFlash('success', 'Menu modifié avec succès');
     }
 
-    //on redirige
-    // return $this->redirectToRoute('admin_menu_index');
+      //on redirige
+      return $this->redirectToRoute('admin_menu_edit', ['id' => $menu->getId()]);
 
       return $this->render('admin/menu/edit.html.twig',[
         'menuForm'=> $menuform->createView()

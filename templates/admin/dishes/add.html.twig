@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %} 
+
+{% block title %}Administration des plats{% endblock %} 
+
+{% block body %}
+<main>
+    <div class="container">
+    <h1 class="text-danger mt-5 text-center">Ajout d'un nouveau plat</h1>
+    <hr class="featurette-divider mt-5">
+      
+      {% include "admin/dishes/_form.html.twig"%}
+
+    <hr class="featurette-divider mt-5">
+    </div>
+
+{% endblock %}

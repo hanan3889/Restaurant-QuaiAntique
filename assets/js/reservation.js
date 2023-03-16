@@ -1,4 +1,6 @@
-// //Récupérer le formulaire;
+//Récupérer le formulaire;
+const form = document.querySelector(".form");
+console.log(form);
 
 // const watchSubmit = () => {
 //   const form = document.querySelector(".form");
