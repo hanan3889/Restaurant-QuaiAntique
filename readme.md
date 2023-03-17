@@ -22,6 +22,18 @@ Pour connaitre sa configuration il suffit de taper dans le terminal :
 
 `symfony check:requirements`
 
+## Livrables en annexes
+
+Vous trouverez mes documents en annexe de mon github.
+
+La marche à suivre ?
+
+- ➡️ Se rendre sur l'onglet ==Go to file==
+
+- ➡️ Taper sur la barre de recherche _charte graphique_ ou _documentation technique_
+
+Ou sinon vous rendez-vous sur mon Google Drive https://drive.google.com/drive/u/1/my-drive
+
 ## CSS
 
 J'ai installé le theme Cyborg de bootswatch (site proposant des themes gratuit et qui utilise bootstrap).

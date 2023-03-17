@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Dishes;
 use App\Form\DishesFormType;
+use App\Service\PictureService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,7 +20,8 @@ class DishesController extends AbstractController
       return $this->render('admin/dishes/index.html.twig');
     }
     #[Route('/ajout', name: 'add')]
-    public function add(Request $request, EntityManagerInterface $em): Response
+    public function add(Request $request, EntityManagerInterface $em,
+    PictureService $pictureService): Response
     {
       $this->denyAccessUnlessGranted('ROLE_ADMIN');
 
@@ -36,6 +38,19 @@ class DishesController extends AbstractController
 
       //on vérifie si le formulaire est soumis ET valide
       if ($dishesform->isSubmitted() && $dishesform->isValid()) {
+        
+        //on récupère les images
+        $images = $dishesform->get('images')->getData();
+        //dd($images);
+
+        foreach($images as $image){
+          //on définit le dossier de destination
+          $folder = 'plats';
+
+          //on appelle le service d'ajout
+          $fichier = $pictureService->add($image, $folder, 300, 300);
+          die;
+        }
 
         //on divisie le prix
         $prix = $dishes->getPrice() / 100;
