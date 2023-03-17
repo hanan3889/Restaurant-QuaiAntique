@@ -32,7 +32,7 @@ La marche à suivre ?
 
 - ➡️ Taper sur la barre de recherche _charte graphique_ ou _documentation technique_
 
-Ou sinon vous rendez-vous sur mon Google Drive https://drive.google.com/drive/u/1/my-drive
+Ou sinon rendez-vous sur mon Google Drive https://drive.google.com/drive/u/1/my-drive
 
 ## CSS
 
