@@ -75,11 +75,11 @@ class PictureService
 
     //on stocke l'image recadrée
     imagewebp($resized_picture, $path . '/mini/' . $width . 'X' .
-    $height . '-' . $fichier);
+    $height . '-' . $folder);
 
-    $picture->move($path . '/', $fichier);
+    $picture->move($path . '/', $folder);
 
-    return $fichier;
+    return $folder;
 
   }
 

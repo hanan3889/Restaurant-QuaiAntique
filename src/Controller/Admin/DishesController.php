@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Dishes;
+use App\Entity\Image;
 use App\Form\DishesFormType;
 use App\Service\PictureService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -49,7 +50,10 @@ class DishesController extends AbstractController
 
           //on appelle le service d'ajout
           $fichier = $pictureService->add($image, $folder, 300, 300);
-          die;
+          
+          $img = new Image();
+          $img->setTitle($fichier);
+          
         }
 
         //on divisie le prix

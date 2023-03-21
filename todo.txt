@@ -1,5 +1,10 @@
 TODO LIST
 
+Il s'agit de mon premier projet en fullstack. Consciente que tout n'est pas parfait et pas terminée 
+je compte sur vos commentaires pour améliorer mon code.
+
+De plus il me reste encore beaucoup de travail  à faire.
+
 A finir :
 - Les controllers
 - Les fixtures avec les relations
@@ -9,3 +14,5 @@ A finir :
 - Régler le pb du controller des images
 - modifier le path dans la navbar
 - regler le pb du logo qui s'enlève
+- rendre la homepage dynamique
+- le déploiement
