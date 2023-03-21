@@ -69,24 +69,7 @@ Et pour l'arrêter :
 
 # Administration
 
-### Admin - Solution 1
-
-Pour la partie administration j'ai installé le bundle EasyAdmin avec la commande :
-
-`composer require easycorp/easyadmin-bundle`
-
-Puis configurer le dashboard avec :
-
-`php bin/console make:admin:dashboard`
-
-Et realiser les Crud Controllers avec :
-
-`php bin/console make:admin:crud`
-
-J'ai décidé de faire autrement car je n'ai pas réussi a faire mes Crud via le dashboard.
-D'ailleurs si vous rendez à la page /admin avec les accès vous tomberez sur l'administration du site.
-
-### Admin - Solution 2
+### Admin -
 
 J'ai aussi crée des controllers à la main dans le repertoire Admin.
 Puis j'ai crée un dossier Voter dans le dossier Security et les fichiers voter liés à mes entités afin de crée des voter pour les CRUD.
